@@ -1,0 +1,15 @@
+    Design patterns (Sabloane de proiectare) sunt solutii tipice la probleme comune in
+proiectarea software.
+    Fiecare sablon este ca un model care poate fi personalizat pentru a rezolva o anumita
+problema de design in cod.
+    Ele definesc un limbaj comun care ajuta echipa de dezvoltare sa comunice mai eficient prin codul scris.
+    Sabloanele difera prin complexitate, nivel de detalii si scara de aplicabilitate fata
+de intregul sistem proiectat
+
+    Tipuri de sabloane de proiectare:
+1.CREATIONALE (Creational) --> ofera mecanisme de creare a obiectelor, marind astfel flexibilitatea
+                               si reutilizarea codului existent
+2.STRUCTURALE (Structural) --> explica cum sa fie asamblate obiectele si clasele in structuri mai
+                               mari pastrand in acelasi timp flexibilitatea si eficienta lor
+3.COMPORTAMENTALE (Behavioral) --> se ocupa de comunicarea eficienta a obiectelor si de repartizarea
+                                    responsabilitatilor intre acestea
