@@ -1,0 +1,16 @@
+Iteratorii - obiecte care creaza mecanisme de a merge de la un obiect la altul
+
+Iteratorii nu retin in memorie intreaga colectie de elemente, ci doar cum ajungi la urmatorul elem
+ex: Fibonacci - are nevoie de mecanism/formula pentru a ajunge la urmatorul elem cand este necesar
+
+Iteratorii se implementeaza cu clasele care inregistreaza 'iter' si 'next'
+Functiile 'iter' si 'next' exista si in afara claselor (se poate obitine pe orice obiect care este
+iterabil)
+
+!write -suprascrie fisierul
+!append -adauga la fisier
+
+1. In Python se pot transmite ca parametri alte functii.
+2. In Python se pot defini functii in interiorul altor functii
+
+Decoratorii se apeleaza fara paranteze
