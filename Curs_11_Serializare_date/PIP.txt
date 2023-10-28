@@ -1,0 +1,27 @@
+pip --> este un tool in linia de comanda( Terminal) folosit pentru a instala pachete
+        python externe
+    --> ele se instaleaza din serverul pypi (python package index)
+
+Comenzi:
+    - pip install requests --> se instaleaza pachetul requests si toate dependentele acestuia
+    - pip install requests==2.28.0 --> instaleaza exact versiunea specificata
+    - pip uninstall requests       --> dezinstaleaza pachetul requests
+    - pip freeze     --> afiseaza toate pachetele instalate in environmentul curent
+    - pip list -o    --> afiseaza toate pachetele pentru care exista o versiune mai noua decat cele instalate
+    - pip install -U requests --> actualizeaza pachetul requests la ultima versiune
+                                  disponibila
+
+Environment virtual --> este un mediu de programare in care sunt instalate pachetele
+                        specifice unui singur proiect
+                    --> reprezinta un folder la nivelul sistemului de operare
+                    --> este util pentru:
+                 1. Nu toate proiectele vor avea nevoie de anumite pachete si atunci
+                    nu are sens sa le avem instalate de fiecare data cand vrem sa rulam proiectul
+                 2. Uneori vom avea proiecte care ruleaza versiuni diferite de python care pot fi incompatibile
+                 3. Uneori vom avea proiecte care au versiuni diferite ale aceluiasi pachet, acestea nefiind compatibile
+
+Pentru a lucra in echipa avem nevoie de o modalitate pentru a partaja dependentele
+proiectului curent:
+    1. Scriem toate dependentele intr-un fisier special: pip freeze > requirements.txt
+    2. De fiecare data cand cineva vrea sa foloseasca proiectul trebuie sa instaleze
+    dependentele din acel fisier: pip install -r requirements.txt
