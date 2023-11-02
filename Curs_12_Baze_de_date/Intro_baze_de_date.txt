@@ -1,0 +1,12 @@
+O baza de date este o colectie de informatii organizate stocate si accesate electronic.
+Bazele de date permit persoanelor sau organizatiilor sa stocheze, sa gestioneze si sa
+    recupereze cantitati mari de date intr-un mod eficient si organizat.
+
+Exista diferite tipuri de baze de date:
+    1. Baze de date relationale -> folosesc limbaj specific SQL
+    2. Baze de date NOSQL -> nu definesc relatii intre entitati, astfel ca nu au un
+                             limbaj specific. (NOT ONLY SQL)
+
+Bazele de date sunt gestionate de sisteme de gestionare a bazelor de date care ofera
+    utilizatorilor o gama larga de instrumente/ comenzi pentru crearea, intretinerea
+    si interogarea bazei de date

@@ -1,0 +1,39 @@
+SQL (Stuctured Query Language) - Limbaj de interogare structurat
+
+SQL este limbajul standard folosit pentru gestionarea si manipularea bazelor de date
+    relationale. Permite utilizatorilor sa insereze, actualizeze, stearga si sa recupereze
+    datele stocate.
+Sintaxa SQL consta intr-un set de comenzi, clauze si functii care efectueaza operatii
+    specifice asupra datelor stocate intr-o baza de date
+
+1. CREATE --> folosit pentru crearea unui nou tabel
+
+CREATE TABLE table_name(
+    column1 datatype 1,
+    column2 datatype2,
+    ...
+);
+
+2. SELECT --> folosit pentru a recupera date
+
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition;
+
+3. INSERT --> folosit pentru a insera date noi intr-un tabel
+
+INSERT INTO table_name( column1, column2,...)
+VALUES (value1, value2, ...);
+
+4. UPDATE --> folosit pentru a modifica date care deja exista in tabel
+
+UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition; # fara conditie ar actualiza toate randurile din tabel cu valorile puse
+                 # mai sus
+
+5. DELETE --> folosit pentru a sterge date dintr-un tabel
+
+DELETE FROM table_name
+WHERE condition;
+
