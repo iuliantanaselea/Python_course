@@ -1,0 +1,6 @@
+API = Application Programming Interface
+    - permit aplicatiilor software sa comunice intre ele
+    - Actioneaza ca un mediator intre doua aplicatii permitand uneia sa solicite date sau servicii de la
+    cealalta si sa primeasca un raspuns inapoi
+    - Fac posibil ca aplicatiile sa acceseze functii sau date ale altor platforme deschizand posibilitati
+    infinite de inovare si integrare

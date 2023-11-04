@@ -1,0 +1,36 @@
+REST = Representational State Transfer
+    - Este un stil arhitectural pentru furnizarea de standarde intre sistemele software de pe web facilitand
+    comunicarea intre acestea
+    - Sistemele compatibile REST numite si sisteme RESTFUL se caracterizeaza prin modul in care separa
+    preocuparile clientului si serverului.
+    - Aceste sisteme nu au stare. (STATELESS)
+        ! nu se pot modifica in timp
+        ! nu retin date, dar le pot comunica bazelor de date (care sunt STATELESS)
+        ! utilizat doar ca mecanism care intreprinde anumite operatii si contine logica
+
+Pentru ca un API sa fie considerat REST trebuie sa existe urmatoarele 6 reguli:
+    1. Trebuie sa avem o interfata uniforma pentru resurse:
+        -calea trebuie sa fie intuitiva pentru orice resursa si sa urmeze o anumita structura:
+            * /articles     --> de aici trebuie sa putem lua lista cu toate articolele
+                            --> in general nu vom putea lua toate resursele din prima de pe un ENDPOINT
+                            de genul acesta, asa ca trebuie sa ne folosim de paginare si filtrare.
+            * /articles?page=1                 --> prima pagina cu articole
+            * /articles?category=travel&page=2 --> articolele din categ. travel de pe pagina 2
+            * /articles/1001                   --> articolul cu id-ul 1
+            * /articles/1001/comments          --> toate comentariile de la articolul cu id-ul 1001
+
+    2. Arhitectura client-server:
+        - clientul si serverul sunt separate si actioneaza independent permitand utilizarea tehnologiilor
+        diferite pentru fiecare
+    3. STATELESS:
+        - serverul nu stocheaza niciun context intre cereri, astfel incat fiecare cerere contine toate
+        informatiile necesare pentru a o finaliza
+    4. Capacitatea de CACHE:
+        - clientii pot stoca in CACHE datele de raspuns reducand numarul solicitarilor catre server si
+        astfel imbunatatind performanta
+    5. Utilizarea metodelor HHTP:
+        - API-urile RESTFUL utilizeaza metode HTTP standard (get, post, put, delete) pentru a interactiona
+        cu resurse, unde fiecare metoda reprezinta o actiune specifica
+    6. Utilizarea codurilor de stare HTPP:
+        -API-urile RESTFUL folosesc coduri pentru a indica rezultatul unei solicitari.
+        https://developer.mozilla.org/en-US/docs/Web/HTTP/Status

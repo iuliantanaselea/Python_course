@@ -1,0 +1,8 @@
+Metodele http sunt verbele standard utilizate pentru a indica actiunea dorita care trebuie efectuata pe
+o resursa dintr-un API RESTFUL.
+Cele 4 metode principale sunt:
+    -GET: preia date dintr-o resursa si este folosit pentru citire
+    -POST: creaza o noua resursa si este folosita pentru a trimite date catre un server
+    -PUT: actualizeaza o resursa curenta si este folosita pentru a modifica datele existente
+    -DELETE: sterge o resursa
+
