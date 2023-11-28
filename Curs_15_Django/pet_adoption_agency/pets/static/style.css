@@ -1,0 +1,38 @@
+li a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+input[type=submit] {
+    background-color: blue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 10px;
+    transition: 0.6s scale;
+}
+input[type=submit]:hover {
+    background-color: lightblue;
+    transition: 0.6s scale;
+    scale: 1.2;
+}
+input[type=text], [type=number] {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the text area (not horizontally) */
+}
+
+fieldset {
+    border-radius: 10px;
+    box-shadow: 5px 5px lightblue;
+    margin: 10px 5px;
+    border-color: lightblue;
+}

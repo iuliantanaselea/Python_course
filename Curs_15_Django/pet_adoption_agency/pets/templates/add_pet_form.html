@@ -1,0 +1,30 @@
+<form action="{% url 'pets:add' %}" method="post">
+    {% csrf_token %} <!-- csrf = cross site request forgery - este un secret unic
+    pentru a proteja aplicatia server de requesturi straine -->
+    <fieldset>
+        <label for="name">
+            Name:
+        </label>
+        <input type="text" name="name" id="name"> <br>
+        <label for="age">
+            Age:
+        <input type="number" name="age" id="age"> <br>
+        <label for="gender">
+            Gender:
+        </label>
+        <label for="gender(F)">
+            Female
+        </label>
+        <input type="radio" name="gender" id="gender(F)" value="F">
+        <label for="gender(M)">
+            Male
+        </label>
+        <input type="radio" name="gender" id="gender(M)" value="M"> <br>
+        <label for="species">
+            Species:
+        </label>
+        <input type="text" name="species" id="species"> <br>
+        </label>
+    </fieldset>
+    <input type="submit" value="Add">
+</form>
